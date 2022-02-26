@@ -8,7 +8,6 @@ for i in key:
 cipher = []
 ciphertext = ''
 if method == "e":
-
     for i in range(len(text)):
         if text[i].isupper():
             cipher.append((alphabet.find(text[i].lower()) + alphabet.find(key[i])) % len(alphabet))
